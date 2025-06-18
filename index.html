@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="body__header">
+        <nav class="navbar">
+            <p>Perfil</p>
+            <ul>
+                <li><a href="#" class="index">Inicio</a></li>
+                <li><a href="#" class="index">Mi Perfil</a></li>
+                <li><a href="#" class="index">Encontrar Conexiones</a></li>
+                <li><button class="logout" type="button">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- LADO IZQUIERDO -->
+        <div class="container left__side">
+
+            <!-- TARJETA PERFIL -->
+            <div class="card card__perfil">
+
+                <!-- Header celeste -->
+                <header class="card__perfil-header">
+                </header>
+                <!-- Container imagen perfil flotante  -->
+                <div class="img--wrapper">
+                    <img src="assets/img/mujer1.png" alt="foto-perfil" class="profile__pic">
+                </div>
+
+                <!-- Contenido card perfil -->
+                <div class="card__perfil-body">
+
+                    <!-- NOMBRE -->
+                    <h1 id="nombre">Linn Olsen</h1>
+
+                    <!-- Ubicacion y resumen -->
+                    <div class="subtitulo">
+                        <p id="ubicacion">Bergen, Noruega</p>
+                        <p id="descripcion">Diseñadora de UX/UI | Desarrolladora Frontend | Amante de la naturaleza</p>
+                    </div>
+
+                    <!-- Descripcion perfil -->
+                    <div class="perfil__descripcion--wrapper">
+                        <p id="perfil__descripcion">Apasionada por crear experiencias digitales hermosas y funcionales.
+                            Cuando no está codificando, disfruta explorando los fiordos noruegos y capturando la belleza
+                            de la naturaleza en fotografías.</p>
+
+
+                    </div>
+                    <!-- EDITAR PERFIL -->
+                    <button class="edit--profile">
+                        <img src="assets/img/setting-icon.png" alt="setting-icon">
+                        <p>Edit profile</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TARJETA EDUCACION -->
+            <div class="card card__educacion">
+                <h2 id="educacion__titulo">Education</h2>
+                <p>
+                    Coding Dojo - Bootcamp de Desarrollo Fullstack </br>
+                    Dic 2019 - Mar 2020 </br>
+                    Triple cinturón negro en Python, MERN y C#
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- LADO DERECHO -->
+        <div class="container right__side">
+
+            <!-- SOLICITUDES -->
+            <div class="card card__solicitudes">
+                <h2>Solicitudes de Conexion (2)</h2>
+
+                <!-- Contenedor de una solicitud -->
+                <div class="card__solicitudes--solicitud">
+                    <img src="assets/img/hombre1.jpg" alt="profile-picture" class="solicitud__img">
+                    <p>Kai Shröder</p>
+                    <img src="assets/img/check-icon.png" alt="accept-icon" class="card__solicitudes--icon">
+                    <img src="assets/img/cross-icon.png" alt="reject-icon" class="card__solicitudes--icon">
+                </div>
+
+
+
+                <div class="card__solicitudes--solicitud">
+                    <img src="assets/img/mujer2.png" alt="profile-picture" class="solicitud__img">
+                    <p>Amira El-Masry</p>
+                    <img src="assets/img/check-icon.png" alt="accept-icon" class="card__solicitudes--icon">
+                    <img src="assets/img/cross-icon.png" alt="reject-icon" class="card__solicitudes--icon">
+                </div>
+            </div>
+
+
+            <!-- CONEXIONES -->
+            <div class="card card__conexiones">
+                <h2>Tus Conexiones (500+)</h2>
+
+                <!-- Contenedores de una conexión -->
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/hombre2.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Adrien Desplatz</p>
+                </div>
+
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/hombre3.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Aarav Patel</p>
+                </div>
+
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/mujer3.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Lina Kovacevic</p>
+                </div>
+
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/hombre4.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Mateo Hernández</p>
+                </div>
+
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/mujer4.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Yuna Kim</p>
+                </div>
+
+                <div class="card__conexiones--conexion">
+                    <img src="assets/img/hombre5.jpg" alt="profile-picture" class="conexion__img">
+                    <p>Liam O'Brien</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

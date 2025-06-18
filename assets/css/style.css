@@ -1,0 +1,198 @@
+/* RESET */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body li{
+    list-style: none;
+}
+
+/* NAVBAR */
+.body__header{
+    color: white;
+    background-color:rgb(44, 44, 44);
+    height:80px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding:0 20px; 
+    align-items: center;
+    height:100%;
+}
+.navbar ul{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.navbar p{
+    font-weight:bold;
+    font-size:larger;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+.navbar .logout{
+    border:none;
+    padding: 10px 20px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+
+
+/* MAIN */
+main{
+    display:flex;
+    gap:50px;
+    padding: 40px 60px;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+    box-shadow: 0 1px 5px rgb(88, 88, 88);
+}
+.left__side{
+    flex: 3;
+}
+.right__side{
+    flex: 1;
+}
+
+
+
+/* LEFT-SIDE */
+/* CARD-PERFIL */
+.card__perfil{
+    position:relative;
+    overflow:hidden;
+    padding:0;
+}
+.card__perfil-header{
+background-color:rgb(0, 140, 255);
+height:80px;
+}
+.card__perfil-body{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding: 4rem 2rem;
+    
+}
+.card__perfil-body button{
+    display:flex;
+    gap:1rem;
+    align-items: left;
+    width:100px;
+    border:none;
+    color:rgb(0, 140, 255);
+    cursor:pointer;
+    align-items: center;
+}
+.card__perfil-body button img{
+    width:1rem;
+}
+.img--wrapper{
+    position:absolute;
+    left:30px;
+    top:30px;
+}
+.profile__pic{
+    width:100px;
+    height:100px;
+    border: solid white;
+    border-radius:50%;
+    position:relative;
+}
+
+/* CARD-EDUCACIÓN */
+.card__educacion{
+    padding:1.5rem;
+    gap:2rem;
+}
+
+
+
+/* RIGHT SIDE */
+/* .CARD-SOLICITUD */
+.card__solicitudes{
+    text-align: left;
+    gap:20px;
+    padding:10px;
+}
+.card__solicitudes--solicitud{
+    display:flex;
+    justify-content: left;
+    padding:10px 2rem;
+    align-items:center;
+    gap:15px;
+}
+.solicitud__img{
+    width:40px;
+    border: solid 2px rgb(0, 140, 255);
+    border-radius:5px;
+}
+.card__solicitudes--icon{
+    width:30px;
+    cursor:pointer;
+}
+
+/* CARD-CONEXION */
+.card__conexiones{
+    gap:5px;
+    padding:10px;
+}
+.card__conexiones--conexion{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+}
+.conexion__img{
+    width:40px;
+    border: solid 1px black;
+    border-radius:50%;
+}
+
+/* RESPONSIVE */
+/* MOBILE */
+@media screen and (max-width:767px){
+    /* Ocultar index en vista mobile */
+    li .index{
+        display:none;
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+        padding: 20px 10px;
+    }
+}
+/* TABLET */
+@media screen and (768px <= width <= 1024px){
+    body{
+        font-size:140%;
+    }
+    button{
+        font-size:100%;
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+        padding: 20px 40px;
+    }
+}
+
+
+
